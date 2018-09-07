@@ -1,7 +1,5 @@
 package sorting.simpleSorting;
 
-import java.util.Arrays;
-
 import sorting.AbstractSorting;
 import util.Util;
 
@@ -12,15 +10,16 @@ import util.Util;
  */
 public class BubbleSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
-	@Override
-	public void sort(T[] array, int leftIndex, int rightIndex) {
-		for(int i = leftIndex; i < rightIndex+1; i++) {
-			for(int j = leftIndex; j < rightIndex; j++) {
-				if(array[j].compareTo(array[j+1]) > 0) {
-					Util.swap(array, j, j+1);
-				}
-			}
-		}
-	}
-	
+   public void sort(T[] array, int leftIndex, int rightIndex) {
+	  if(!(array == null || array.length == 0 || leftIndex > rightIndex || leftIndex < 0 || rightIndex > array.length -1)) {
+	      for (int i = leftIndex; i < rightIndex + 1; i++) {
+	         for (int j = leftIndex; j < rightIndex; j++) {
+	            if (array[j].compareTo(array[j + 1]) > 0) {
+	               Util.swap(array, j, j + 1);
+	            }
+	         }
+	      }
+	  }
+   }
+
 }

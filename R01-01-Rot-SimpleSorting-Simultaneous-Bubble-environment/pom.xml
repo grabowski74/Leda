@@ -17,7 +17,7 @@
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 			</snapshots>
-		</pluginRepository>
+		</pluginRepository>      
 	</pluginRepositories>
 
 	<dependencies>
@@ -107,7 +107,7 @@
 						<phase>install</phase>
 						<goals>
 							<goal>generateChart</goal>
-						</goals>
+						</goals>        
 						<configuration>
 							<!-- MODIFIQUE O ATRIBUTO ABAIXO PARA false CASO VOCE NAO QUEIRA GERAR 
 								O GRAFICO DOS ALGORITMOS -->
@@ -115,13 +115,14 @@
 							<!-- INSIRA OS NOMES COMPLETOS DAS CLASSES A SEREM TESTADAS AQUI (Full 
 								qualified name = nome com o pacote) -->
 							<qualifiedNames>
-								<!-- name>sorting.simpleSorting.BubbleSort</name -->
-								<!-- name>sorting.simpleSorting.SelectionSort</name -->
-								<!-- name>sorting.simpleSorting.InsertionSort</name -->
+								<name>sorting.simpleSorting.BubbleSort</name>
+								<name>sorting.simpleSorting.SelectionSort</name>
+								<name>sorting.simpleSorting.InsertionSort</name>
+								<name>sorting.variationsOfBubblesort.SimultaneousBubblesort</name> 
 							</qualifiedNames>
 						</configuration>
 					</execution>
-				</executions>
+				</executions>    
 			</plugin>
 		</plugins>
 	</build>
