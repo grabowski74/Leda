@@ -1,7 +1,5 @@
 package sorting.divideAndConquer;
 
-import java.util.Arrays;
-
 import sorting.AbstractSorting;
 
 /**
@@ -12,53 +10,50 @@ import sorting.AbstractSorting;
  */
 public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
-	@Override
-	public void sort(T[] array, int leftIndex, int rightIndex) {
-		if(array != null && leftIndex < rightIndex && leftIndex >= 0 && rightIndex < array.length && array.length != 0) {
-			int mid = (leftIndex + rightIndex)/2;
-			
-			sort(array, leftIndex, mid);
-			sort(array, mid + 1, rightIndex);
-			
-			merge(array, leftIndex, mid, rightIndex);
-		}
-	}
+   @Override
+   public void sort(T[] array, int leftIndex, int rightIndex) {
+      if (array.length > 1 && rightIndex - leftIndex >= 1) {
 
-	private void merge(T[] array, int leftIndex, int mid, int rightIndex) {
-		
-		T[] aux = Arrays.copyOf(array, array.length);
-		
-		int i, j, k;
-		i = k = leftIndex;
-		j = mid + 1;
-		
-		while(i <= mid && j <= rightIndex) {
-			if(aux[i].compareTo(aux[j]) < 0) {
-				array[k] = aux[i];
-				i++;
-			} else {
-				array[k] = aux[j];
-				j++;
-			}
-			k++;
-		}
-		
-		while(i <= mid) {
-			array[k] = aux[i];
-			i++;
-			k++;		
-		}
-		
-		while(j <= rightIndex) {
-			array[k] = aux[j];
-			j++;
-			k++;
-		}
-		
-	}
+         int mid = (leftIndex + rightIndex) / 2;
 
-	@SuppressWarnings({ "unused", "unchecked" })
-	private T[] extracted(T[] array) {
-		return (T[]) new Comparable[array.length];
-	}
+         sort(array, leftIndex, mid);
+         sort(array, mid + 1, rightIndex);
+
+         merge(array, leftIndex, mid, rightIndex);
+      }
+   }
+
+   private void merge(T[] array, int inicio, int mid, int fim) {
+
+      int parte1 = inicio;
+      int parte2 = mid + 1;
+
+      T[] aux = (T[]) new Comparable[fim - inicio + 1];
+
+      int auxIndex = 0;
+      while (parte1 <= mid && parte2 <= fim) {
+         if (array[parte1].compareTo(array[parte2]) > 0) {
+            aux[auxIndex] = array[parte2];
+            parte2++;
+         } else {
+            aux[auxIndex] = array[parte1];
+            parte1++;
+         }
+         auxIndex++;
+      }
+
+      if (parte1 <= mid) {
+         copy(array, aux, parte1, mid, auxIndex);
+      }
+      if (parte2 <= fim) {
+         copy(array, aux, parte2, fim, auxIndex);
+      }
+      copy(aux, array, 0, aux.length - 1, inicio);
+   }
+
+   private void copy(T[] aux, T[] array, int inicio, int fim, int comeco) {
+      for (int p = inicio; p <= fim; p++, comeco++) {
+         array[comeco] = aux[p];
+      }
+   }
 }

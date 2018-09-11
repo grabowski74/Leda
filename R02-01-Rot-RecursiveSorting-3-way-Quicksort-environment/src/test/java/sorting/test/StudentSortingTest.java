@@ -7,7 +7,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import sorting.AbstractSorting;
+
 import sorting.divideAndConquer.MergeSort;
+import sorting.divideAndConquer.QuickSort;
+
+import sorting.divideAndConquer.threeWayQuicksort.ThreeWayQuickSort;
 
 public class StudentSortingTest {
 
@@ -99,6 +103,25 @@ public class StudentSortingTest {
 		genericTest(vetorValoresRepetidos);
 	}
 
+
+	@Test
+	public void testSort06() {
+		int qnt = 20000;
+		Integer[] array = new Integer[qnt];
+		
+		for(int i = 0; i < array.length; i++) {
+			array[i] = (int) (Math.random()*qnt);
+		}
+		
+		long inicio = System.currentTimeMillis();
+		
+		genericTest(array);
+		
+		long fim = System.currentTimeMillis();
+		
+		System.out.println("Executado em = " + (fim-inicio) + "ms");
+	}
+
 	// MÉTODOS QUE OS ALUNOS PODEM CRIAR
 	/**
 	 * O ALUNO PODE IMPLEMENTAR METODOS DE ORDENAÇÃO TESTANDO O SORT COM TRES
@@ -106,4 +129,5 @@ public class StudentSortingTest {
 	 * SEGUIR A ESTRUTURA DOS MÉTODOS DE TESTE ACIMA DESCRITOS, ORDENANDO APENAS
 	 * UMA PARTE DO ARRAY.
 	 */
+
 }
