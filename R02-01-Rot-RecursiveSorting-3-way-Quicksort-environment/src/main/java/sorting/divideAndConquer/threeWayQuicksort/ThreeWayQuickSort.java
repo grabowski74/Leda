@@ -30,7 +30,7 @@ public class ThreeWayQuickSort<T extends Comparable<T>> extends
 		if (array.length > 1 && rightIndex - leftIndex >= 1) {
 			
 			sortPivot(array, leftIndex, rightIndex);
-			int posPivot = move(array, leftIndex + 1, rightIndex - 1);
+			int posPivot = part(array, leftIndex + 1, rightIndex - 1);
 			
 			if (rightIndex - leftIndex > 2) {
 				sort(array, leftIndex, posPivot - 1);
@@ -79,7 +79,7 @@ public class ThreeWayQuickSort<T extends Comparable<T>> extends
 		
 	}
 
-	private int move(T[] array, int inicio, int fim) {
+	private int part(T[] array, int inicio, int fim) {
 		int j = inicio - 1;
 		int i = inicio;
 		T pivot = array[fim];
@@ -97,7 +97,6 @@ public class ThreeWayQuickSort<T extends Comparable<T>> extends
 			Util.swap(array, fim, fim - 1);
 			fim--;
 		}
-		// Util.swap(array, backPointer, end);
 		return j;
 	}
 }

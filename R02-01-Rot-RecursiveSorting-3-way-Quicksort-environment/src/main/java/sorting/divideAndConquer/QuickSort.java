@@ -21,7 +21,7 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSorting<T> {
 			sort(array, pivoIndex + 1, rightIndex);
 		}
 	}
-
+	
 	private int part(T[] array, int leftIndex, int rightIndex) {
 		T pivo = array[leftIndex];
 		int i, j;

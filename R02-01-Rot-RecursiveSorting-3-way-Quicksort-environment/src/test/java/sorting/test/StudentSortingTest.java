@@ -43,7 +43,7 @@ public class StudentSortingTest {
 	private void getImplementation() {
 		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
 		// null
-		this.implementation = new MergeSort<Integer>();
+		this.implementation = new QuickSort<Integer>();
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {
@@ -106,7 +106,7 @@ public class StudentSortingTest {
 
 	@Test
 	public void testSort06() {
-		int qnt = 20000;
+		int qnt = 500000;
 		Integer[] array = new Integer[qnt];
 		
 		for(int i = 0; i < array.length; i++) {
