@@ -61,4 +61,9 @@ public class SingleLinkedListNode<T> {
 		this.next = next;
 	}
 
+	public void setPrevious(DoubleLinkedListNode<T> newHead) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
