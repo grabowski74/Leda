@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e6eff2c-2505-4317-9e48-0fce71d9fac5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/117210375-send.log" beforeDir="false" afterPath="$PROJECT_DIR$/117210375-send.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/adt/linkedList/StudentDoubleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adt/linkedList/StudentDoubleLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/adt/linkedList/StudentLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/adt/linkedList/StudentLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/br.edu.ufcg.ccc/submission/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/br.edu.ufcg.ccc/submission/pom.xml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="590680418">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="23" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/adt/linkedList/StudentDoubleLinkedListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#getImplementations#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#testInsertFirst#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#testRemoveFirst#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#testRemoveLast#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#testSearch#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#testDuplicates#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#testInsert#0;class#StudentDoubleLinkedListTest#0" />
+                <element signature="method#testRemove#0;class#StudentDoubleLinkedListTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/adt/linkedList/StudentLinkedListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="812">
+              <caret line="172" column="1" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adt/linkedList/StudentDoubleLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/adt/linkedList/StudentLinkedListTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Submissao de roteiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Submissao de roteiro" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
+    <option name="y" value="117" />
+    <option name="width" value="950" />
+    <option name="height" value="787" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="submission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="R07-01-Rot-Linked-list-abordagem-recursiva-environment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539036617021" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android JUnit.StudentDoubleLinkedListTest">
+    <configuration name="StudentDoubleLinkedListTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="submission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adt.linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="adt.linkedList" />
+      <option name="MAIN_CLASS_NAME" value="adt.linkedList.StudentDoubleLinkedListTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentLinkedListTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="submission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adt.linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="adt.linkedList" />
+      <option name="MAIN_CLASS_NAME" value="adt.linkedList.StudentLinkedListTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentLinkedListTest.testRemove" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="submission" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adt.linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="adt.linkedList" />
+      <option name="MAIN_CLASS_NAME" value="adt.linkedList.StudentLinkedListTest" />
+      <option name="METHOD_NAME" value="testRemove" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android JUnit.StudentLinkedListTest.testRemove" />
+      <item itemvalue="Android JUnit.StudentLinkedListTest" />
+      <item itemvalue="Android JUnit.StudentDoubleLinkedListTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.StudentDoubleLinkedListTest" />
+        <item itemvalue="Android JUnit.StudentLinkedListTest" />
+        <item itemvalue="Android JUnit.StudentLinkedListTest.testRemove" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e6eff2c-2505-4317-9e48-0fce71d9fac5" name="Default Changelist" comment="" />
+      <created>1539035890986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539035890986</updated>
+      <workItem from="1539035893858" duration="617000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="StudentLinkedListTest_testRemove - 2018.10.08 at 19h 05m 35s.xml">
+      <configuration name="StudentLinkedListTest.testRemove" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="StudentLinkedListTest - 2018.10.08 at 19h 05m 52s.xml">
+      <configuration name="StudentLinkedListTest" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="StudentDoubleLinkedListTest - 2018.10.08 at 19h 06m 17s.xml">
+      <configuration name="StudentDoubleLinkedListTest" configurationId="AndroidJUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="617000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32934782" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" weight="0.32977587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/adt/linkedList/RecursiveSingleLinkedListImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/adt/linkedList/StudentDoubleLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#getImplementations#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#testInsertFirst#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#testRemoveFirst#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#testRemoveLast#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#testSearch#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#testDuplicates#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#testInsert#0;class#StudentDoubleLinkedListTest#0" />
+            <element signature="method#testRemove#0;class#StudentDoubleLinkedListTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/adt/linkedList/StudentLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="172" column="1" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

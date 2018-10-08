@@ -7,3 +7,23 @@
   <level>FINE</level>
   <message>File 117210375-MATHEUS SILVA ARAUJO.zip was received. It was sent by MATHEUS SILVA ARAUJO from IP 150.165.74.111</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-10-08T16:32:20.055-0300</date>
+  <logger>MATHEUS SILVA ARAUJO</logger>
+  <level>FINE</level>
+  <message>File 117210375-MATHEUS SILVA ARAUJO.zip was received. It was sent by MATHEUS SILVA ARAUJO from IP 150.165.74.111</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-10-08T19:01:05.985-0300</date>
+  <logger>MATHEUS SILVA ARAUJO</logger>
+  <level>FINE</level>
+  <message>File 117210375-MATHEUS SILVA ARAUJO.zip was received. It was sent by MATHEUS SILVA ARAUJO from IP 192.168.0.104</message>
+</record>
