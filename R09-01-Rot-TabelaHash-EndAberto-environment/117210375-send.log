@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-10-18T14:12:23.245-0300</date>
+  <logger>MATHEUS SILVA ARAUJO</logger>
+  <level>FINE</level>
+  <message>File 117210375-MATHEUS SILVA ARAUJO.zip was received. It was sent by MATHEUS SILVA ARAUJO from IP 150.165.42.213</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-10-18T19:46:03.406-0300</date>
+  <logger>MATHEUS SILVA ARAUJO</logger>
+  <level>FINE</level>
+  <message>File 117210375-MATHEUS SILVA ARAUJO.zip was received. It was sent by MATHEUS SILVA ARAUJO from IP 192.168.0.104</message>
+</record>
