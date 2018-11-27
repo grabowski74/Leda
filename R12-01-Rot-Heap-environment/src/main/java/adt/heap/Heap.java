@@ -56,4 +56,6 @@ public interface Heap<T extends Comparable<T>> {
 	 * @return
 	 */
 	public abstract int size();
+	
+	public abstract int kth(int k);
 }
