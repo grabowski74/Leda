@@ -4,6 +4,12 @@ import sorting.AbstractSorting;
 import util.Util;
 
 /**
+ * 
+ * @author Matheus Silva Araujo - Universidade Federal de Campina Grande
+ *
+ */
+
+/**
  * Quicksort is based on the divide-and-conquer paradigm. The algorithm chooses
  * a pivot element and rearranges the elements of the interval in such a way
  * that all elements lesser than the pivot go to the left part of the array and

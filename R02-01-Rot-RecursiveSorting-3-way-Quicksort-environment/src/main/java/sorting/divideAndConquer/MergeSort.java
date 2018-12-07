@@ -1,6 +1,15 @@
 package sorting.divideAndConquer;
 
+import java.util.Arrays;
+
 import sorting.AbstractSorting;
+import util.Util;
+
+/**
+ * 
+ * @author Matheus Silva Araujo - Universidade Federal de Campina Grande
+ *
+ */
 
 /**
  * Merge sort is based on the divide-and-conquer paradigm. The algorithm
@@ -10,50 +19,49 @@ import sorting.AbstractSorting;
  */
 public class MergeSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
-   @Override
-   public void sort(T[] array, int leftIndex, int rightIndex) {
-      if (array.length > 1 && rightIndex - leftIndex >= 1) {
+	private T[] tempMergArr;
 
-         int mid = (leftIndex + rightIndex) / 2;
+	@Override
+	public void sort(T[] array, int leftIndex, int rightIndex) {
+		
+		if (Util.validation(array, leftIndex, rightIndex)) {
 
-         sort(array, leftIndex, mid);
-         sort(array, mid + 1, rightIndex);
+			this.tempMergArr = Arrays.copyOf(array, array.length);
 
-         merge(array, leftIndex, mid, rightIndex);
-      }
-   }
+			if (leftIndex < rightIndex) {
+				int middle = (leftIndex + rightIndex) / 2;
+				sort(array, leftIndex, middle);
+				sort(array, middle + 1, rightIndex);
+				mergeParts(array, leftIndex, middle, rightIndex);
+			}
+		}
+	}
 
-   private void merge(T[] array, int inicio, int mid, int fim) {
+	private void mergeParts(T[] array, int leftIndex, int middle, int rightIndex) {
 
-      int parte1 = inicio;
-      int parte2 = mid + 1;
+		for (int i = leftIndex; i <= rightIndex; i++) {
+			tempMergArr[i] = array[i];
+		}
 
-      T[] aux = (T[]) new Comparable[fim - inicio + 1];
+		int i = leftIndex;
+		int j = middle + 1;
+		int k = leftIndex;
 
-      int auxIndex = 0;
-      while (parte1 <= mid && parte2 <= fim) {
-         if (array[parte1].compareTo(array[parte2]) > 0) {
-            aux[auxIndex] = array[parte2];
-            parte2++;
-         } else {
-            aux[auxIndex] = array[parte1];
-            parte1++;
-         }
-         auxIndex++;
-      }
+		while (i <= middle && j <= rightIndex) {
 
-      if (parte1 <= mid) {
-         copy(array, aux, parte1, mid, auxIndex);
-      }
-      if (parte2 <= fim) {
-         copy(array, aux, parte2, fim, auxIndex);
-      }
-      copy(aux, array, 0, aux.length - 1, inicio);
-   }
-
-   private void copy(T[] aux, T[] array, int inicio, int fim, int comeco) {
-      for (int p = inicio; p <= fim; p++, comeco++) {
-         array[comeco] = aux[p];
-      }
-   }
+			if (tempMergArr[i].compareTo(tempMergArr[j]) < 0) {
+				array[k] = tempMergArr[i];
+				i++;
+			} else {
+				array[k] = tempMergArr[j];
+				j++;
+			}
+			k++;
+		}
+		while (i <= middle) {
+			array[k] = tempMergArr[i];
+			k++;
+			i++;
+		}
+	}
 }

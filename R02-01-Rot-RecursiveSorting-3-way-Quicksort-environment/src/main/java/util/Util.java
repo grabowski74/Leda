@@ -33,11 +33,29 @@ public class Util {
 	public static boolean isPrime(long n) {
 		boolean result = true;
 		for (int i = 2; i < n; i++) {
-			if (n % i == 0){
+			if (n % i == 0) {
 				result = false;
 				break;
 			}
 		}
 		return result;
+	}
+
+	public static boolean validation(Object[] array, int leftIndex, int rightIndex) {
+		boolean valid = true;
+
+		if (array == null || array.length == 0 || array.length < 2) {
+			valid = false;
+		} else if (rightIndex > array.length - 1) {
+			valid = false;
+		} else if (leftIndex < 0) {
+			valid = false;
+		} else if (rightIndex < 0) {
+			valid = false;
+		} else if (leftIndex > rightIndex) {
+			valid = false;
+		}
+
+		return valid;
 	}
 }

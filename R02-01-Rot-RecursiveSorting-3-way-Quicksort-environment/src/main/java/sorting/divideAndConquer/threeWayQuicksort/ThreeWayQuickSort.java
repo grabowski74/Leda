@@ -3,6 +3,12 @@ package sorting.divideAndConquer.threeWayQuicksort;
 import sorting.AbstractSorting;
 import util.Util;
 
+/**
+ * 
+ * @author Matheus Silva Araujo - Universidade Federal de Campina Grande
+ *
+ */
+
 public class ThreeWayQuickSort<T extends Comparable<T>> extends
 		AbstractSorting<T> {
 
