@@ -21,3 +21,11 @@
   * CountingSort;
   * ExtendedCountingSort;
 - The complexity of them revolves around O(n), and there is the use of auxiliary structures.
+
+## R04-01-Rot-Sorting-Gnome-and-Comb-environment
+
+## R05-01-Rot-Stack-CircleQueue-environment
+
+## R06-01-Rot-Linked-list-iterative-approach-environment
+
+## R07-01-Rot-Linked-list-recursive-approach-environment
