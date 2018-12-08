@@ -15,3 +15,9 @@
   * QuickSort;
   * MergeSort;
 - The complexity of them revolves around O(n.log(n)), and there may or may not be the use of auxiliary structures.
+
+## R03-01-Rot-LinearSorting-Countingsort-environment
+- This folder deals with linear sorting algorithms:
+  * CountingSort;
+  * ExtendedCountingSort;
+- The complexity of them revolves around O(n), and there is the use of auxiliary structures.
