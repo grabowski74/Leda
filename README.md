@@ -28,6 +28,10 @@
   * CombSort.
 - The complexity of them revolves around O(n.log(n)), and there may or may not be the use of auxiliary structures.
 ## R05-01-Rot-Stack-CircleQueue-environment
+- This folder deals with simple insertion structures:
+  * Stack;
+  * Queue.
+- Presents the methods of inserting, searching, deleting, size, among others.
 
 ## R06-01-Rot-Linked-list-iterative-approach-environment
 
