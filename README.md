@@ -34,5 +34,6 @@
 - Presents the methods of inserting, searching, deleting, size, among others.
 
 ## R06-01-Rot-Linked-list-iterative-approach-environment
+- This folder deals with a single and double linked list:
 
 ## R07-01-Rot-Linked-list-recursive-approach-environment
