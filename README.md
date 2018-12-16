@@ -37,3 +37,7 @@
 - This folder deals with a single and double linked list:
 
 ## R07-01-Rot-Linked-list-recursive-approach-environment
+
+## R09-01-Rot-TabelaHash-EndAberto-environment
+
+## R10-01-Rot-Arvore-Binaria-de-Busca-environment
