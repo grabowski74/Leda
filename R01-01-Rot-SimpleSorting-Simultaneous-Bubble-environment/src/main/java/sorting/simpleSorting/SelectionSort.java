@@ -18,15 +18,20 @@ public class SelectionSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
-		if (leftIndex >= 0 && rightIndex < array.length) {
-			for (int i = leftIndex; i <= rightIndex; i++) {
+		//Verifica se os indices fornecidos sao validos
+		if(leftIndex >= 0 && rightIndex < array.length) {
+			//Primeira passada no array
+			for(int i = leftIndex; i <= rightIndex; i++) {
+				//Variavel auxiliar para o indice q contenha o menor valor
 				int minIndex = i;
-				for (int j = i; j <= rightIndex; j++) {
-					if (array[j].compareTo(array[minIndex]) < 0) {
+				//Segunda passada no array a fim de achar o menor elemento
+				for(int j = i; j <= rightIndex; j++) {
+					//Comparação entre o elemento e o menor atual
+					if(array[j].compareTo(array[minIndex]) > 0) {
 						minIndex = j;
 					}
-
 				}
+				//Troca
 				Util.swap(array, minIndex, i);
 			}
 		}
