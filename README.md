@@ -40,4 +40,6 @@
 
 ## R09-01-Rot-TabelaHash-EndAberto-environment
 
+## R08-01
+
 ## R10-01-Rot-Arvore-Binaria-de-Busca-environment
