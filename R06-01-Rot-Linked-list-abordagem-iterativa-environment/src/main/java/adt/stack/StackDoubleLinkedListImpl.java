@@ -5,48 +5,55 @@ import adt.linkedList.DoubleLinkedListImpl;
 
 public class StackDoubleLinkedListImpl<T> implements Stack<T> {
 
-	private final int SIZE;
-
-	protected DoubleLinkedList<T> list;
+	protected DoubleLinkedList<T> top;
+	protected int size;
 
 	public StackDoubleLinkedListImpl(int size) {
-		if (size < 0)
-			size = 0;
-		this.SIZE = size;
-		this.list = new DoubleLinkedListImpl<T>();
+		this.size = size;
+		this.top = new DoubleLinkedListImpl<T>();
 	}
 
 	@Override
 	public void push(T element) throws StackOverflowException {
+
 		if (isFull())
 			throw new StackOverflowException();
-		list.insertFirst(element);
+
+		this.top.insert(element);
+
 	}
 
 	@Override
 	public T pop() throws StackUnderflowException {
+
 		if (isEmpty())
 			throw new StackUnderflowException();
-		T element = top();
-		this.list.removeFirst();
-		return element;
+
+		T result = top();
+
+		this.top.removeLast();
+
+		return result;
 	}
 
 	@Override
 	public T top() {
-		T element = null;
+
+		T result = null;
+
 		if (!isEmpty())
-			element = ((DoubleLinkedListImpl<T>) list).getHead().getData();
-		return element;
+			result = ((DoubleLinkedListImpl<T>) this.top).getLast().getData();
+
+		return result;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		return this.list.isEmpty();
+		return this.top.isEmpty();
 	}
 
 	@Override
 	public boolean isFull() {
-		return this.list.size() == this.SIZE;
+		return this.top.size() == this.size;
 	}
 }

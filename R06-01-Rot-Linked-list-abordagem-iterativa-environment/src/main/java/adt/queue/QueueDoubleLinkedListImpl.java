@@ -2,42 +2,50 @@ package adt.queue;
 
 import adt.linkedList.DoubleLinkedList;
 import adt.linkedList.DoubleLinkedListImpl;
+import adt.linkedList.SingleLinkedListImpl;
 
 public class QueueDoubleLinkedListImpl<T> implements Queue<T> {
 
-	private final int SIZE;
-
 	protected DoubleLinkedList<T> list;
+	protected int size;
 
 	public QueueDoubleLinkedListImpl(int size) {
-		if (size < 0)
-			size = 0;
-		this.SIZE = size;
-		this.list = new DoubleLinkedListImpl<>();
+		this.size = size;
+		this.list = new DoubleLinkedListImpl<T>();
 	}
 
 	@Override
 	public void enqueue(T element) throws QueueOverflowException {
+
 		if (isFull())
 			throw new QueueOverflowException();
-		list.insert(element);
+
+		this.list.insert(element);
+
 	}
 
 	@Override
 	public T dequeue() throws QueueUnderflowException {
+
 		if (isEmpty())
 			throw new QueueUnderflowException();
-		T element = head();
-		list.removeFirst();
-		return element;
+
+		T result = ((SingleLinkedListImpl<T>) this.list).getHead().getData();
+
+		this.list.removeFirst();
+
+		return result;
 	}
 
 	@Override
 	public T head() {
-		T element = null;
+
+		T result = null;
+
 		if (!isEmpty())
-			element = ((DoubleLinkedListImpl<T>) list).getHead().getData();
-		return element;
+			result = ((SingleLinkedListImpl<T>) this.list).getHead().getData();
+
+		return result;
 	}
 
 	@Override
@@ -47,6 +55,7 @@ public class QueueDoubleLinkedListImpl<T> implements Queue<T> {
 
 	@Override
 	public boolean isFull() {
-		return this.SIZE == list.size();
+		return this.list.size() == this.size;
 	}
+
 }

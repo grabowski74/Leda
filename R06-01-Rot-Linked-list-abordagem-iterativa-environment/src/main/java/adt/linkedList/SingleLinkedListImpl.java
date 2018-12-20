@@ -1,5 +1,7 @@
 package adt.linkedList;
 
+import java.util.ArrayList;
+
 public class SingleLinkedListImpl<T> implements LinkedList<T> {
 
 	protected SingleLinkedListNode<T> head;
@@ -13,69 +15,95 @@ public class SingleLinkedListImpl<T> implements LinkedList<T> {
 		return this.head.isNIL();
 	}
 
+	/**
+	 * Percorre todos Nodes e incrementa o contador para cada Node percorrido.
+	 */
 	@Override
 	public int size() {
-		int size = 0;
-		SingleLinkedListNode<T> aux = this.head;
-		while (!aux.isNIL()) {
-			size++;
-			aux = aux.getNext();
-		}
-		return size;
 
+		int size = 0;
+		SingleLinkedListNode<T> auxHead = getHead();
+
+		while (!auxHead.isNIL()) {
+			size++;
+			auxHead = auxHead.next;
+		}
+
+		return size;
 	}
 
+	/**
+	 * Percorre todos Nodes checando se o Node eh igual ao elemento, se for, retorna
+	 * o elemento, se nao, retorna nulo.
+	 */
 	@Override
 	public T search(T element) {
-		T result = null;
-		if (!isEmpty() && element != null) {
-			SingleLinkedListNode<T> aux = this.head;
-			while (!aux.isNIL() && !aux.getData().equals(element)) {
-				aux = aux.getNext();
-			}
-			if (!aux.isNIL() && aux.getData().equals(element)) {
-				result = aux.getData();
-			}
+		SingleLinkedListNode<T> auxHead = getHead();
+		while (!auxHead.isNIL() && auxHead.data != element) {
+			auxHead = auxHead.next;
 		}
-		return result;
+
+		return auxHead.data;
 	}
 
+	/**
+	 * Usando um Node auxiliar, chegamos ao fim da lista, e o entao ultimo node
+	 * passa a apontar para o novo Node adicionado.
+	 */
 	@Override
 	public void insert(T element) {
-		if (element != null) {
-			SingleLinkedListNode<T> aux = this.head;
-			while (!aux.isNIL())
-				aux = aux.getNext();
-			aux.setData(element);
-			aux.setNext(new SingleLinkedListNode<T>());
+		SingleLinkedListNode<T> auxHead = getHead();
+
+		if (getHead().isNIL()) {
+			SingleLinkedListNode<T> newHead = new SingleLinkedListNode<T>(element, getHead());
+			this.head = newHead;
+
+		} else {
+			while (!auxHead.next.isNIL()) {
+				auxHead = auxHead.next;
+			}
+			SingleLinkedListNode<T> newNode = new SingleLinkedListNode<T>(element, auxHead.next);
+			auxHead.next = newNode;
+
 		}
 	}
 
+	/**
+	 * Procura o Node a ser removido e faz o seu anterior apontar para seu
+	 * posterior.
+	 */
 	@Override
 	public void remove(T element) {
-		if (!isEmpty() && element != null) {
-			SingleLinkedListNode<T> pointer = this.head.getNext();
-			while (!pointer.isNIL() && !pointer.getData().equals(element)) {
-				pointer = pointer.getNext();
+		if (this.head.data == element)
+			this.head = getHead().next;
+
+		else {
+			SingleLinkedListNode<T> previous = new SingleLinkedListNode<T>();
+			SingleLinkedListNode<T> auxHead = getHead();
+			while (!auxHead.isNIL() && auxHead.data != element) {
+				previous = auxHead;
+				auxHead = auxHead.next;
 			}
-			if (!pointer.isNIL()) {
-				SingleLinkedListNode<T> inFront = pointer.getNext();
-				pointer.setData(inFront.getData());
-				pointer.setNext(inFront.getNext());
+			if (!auxHead.isNIL()) {
+				previous.next = auxHead.next;
 			}
+
 		}
 	}
 
+	/**
+	 * Percorre todos os Nodes e adiciona o seus valores em um array.
+	 */
 	@Override
 	public T[] toArray() {
-		@SuppressWarnings("unchecked")
-		T[] array = (T[]) new Object[size()];
-		SingleLinkedListNode<T> aux = this.head;
-		for (int index = 0; !aux.isNIL(); index++) {
-			array[index] = aux.getData();
-			aux = aux.getNext();
+		ArrayList<T> elements = new ArrayList<T>();
+		SingleLinkedListNode<T> auxHead = getHead();
+		while (!auxHead.isNIL()) {
+			elements.add(auxHead.data);
+			auxHead = auxHead.next;
 		}
-		return array;
+
+		return (T[]) elements.toArray();
 	}
 
 	public SingleLinkedListNode<T> getHead() {
