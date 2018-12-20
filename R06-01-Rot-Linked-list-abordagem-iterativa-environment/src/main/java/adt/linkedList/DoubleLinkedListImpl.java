@@ -1,6 +1,6 @@
 package adt.linkedList;
 
-public class DoubleLinkedListImpl<T> extends SingleLinkedListImpl<T> implements DoubleLinkedList<T> {
+public class DoubleLinkedListImpl<T extends Comparable<T>> extends SingleLinkedListImpl<T> implements DoubleLinkedList<T> {
 
 	protected DoubleLinkedListNode<T> last;
 
@@ -174,6 +174,64 @@ public class DoubleLinkedListImpl<T> extends SingleLinkedListImpl<T> implements 
 
 	public void setLast(DoubleLinkedListNode<T> last) {
 		this.last = last;
+	}
+	
+	//MERGESORT LINKED LIST
+	
+	public DoubleLinkedListNode<T> mergeSort(DoubleLinkedListNode<T> h) {
+		if(h == null || h.next == null) {
+			return h;
+		}
+		
+		DoubleLinkedListNode<T> middle = getMiddle(h);
+		DoubleLinkedListNode<T> nextOfMiddle = (DoubleLinkedListNode<T>) middle.next;
+		
+		middle.next = null;
+		
+		DoubleLinkedListNode<T> left = mergeSort(h);
+		DoubleLinkedListNode<T> right = mergeSort(nextOfMiddle);
+		
+		DoubleLinkedListNode<T> sortedList = sortedMerge(left, right);
+		
+		return sortedList;
+	}
 
+	private DoubleLinkedListNode<T> sortedMerge(DoubleLinkedListNode<T> left, DoubleLinkedListNode<T> right) {
+		DoubleLinkedListNode<T> result = null;
+		
+		if(left == null) {
+			return right; 
+		}
+		if(right == null) {
+			return left;
+		}
+		
+		if(left.getData().compareTo(right.getData()) < 0) {
+			result = left;
+			result.next = sortedMerge((DoubleLinkedListNode<T>) left.next, right);
+		} else {
+			result = right;
+			result.next = sortedMerge(left, (DoubleLinkedListNode<T>) right.next);
+		}
+		return result;
+	}
+
+	private DoubleLinkedListNode<T> getMiddle(DoubleLinkedListNode<T> h) {
+		if(h == null) {
+			return h;
+		}
+		
+		DoubleLinkedListNode<T> fastPtr = (DoubleLinkedListNode<T>) h.next;
+		DoubleLinkedListNode<T> slowPtr = (DoubleLinkedListNode<T>) h;
+		
+		while(fastPtr != null) {
+			fastPtr = (DoubleLinkedListNode<T>) fastPtr.next;
+			if(fastPtr != null) {
+				slowPtr = (DoubleLinkedListNode<T>) slowPtr.next;
+				fastPtr = (DoubleLinkedListNode<T>) fastPtr.next;
+			}
+		}
+		
+		return slowPtr;
 	}
 }

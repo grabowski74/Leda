@@ -3,7 +3,7 @@ package adt.stack;
 import adt.linkedList.DoubleLinkedList;
 import adt.linkedList.DoubleLinkedListImpl;
 
-public class StackDoubleLinkedListImpl<T> implements Stack<T> {
+public class StackDoubleLinkedListImpl<T extends Comparable<T>> implements Stack<T> {
 
 	protected DoubleLinkedList<T> top;
 	protected int size;
