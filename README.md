@@ -38,7 +38,7 @@
 
 ## R07-01-Rot-Linked-list-recursive-approach-environment
 
-## R09-01-Rot-TabelaHash-EndAberto-environment
+## R09-01-Rot-TabelaHash-EndOpen-environment
 
 ## R08-01
 
