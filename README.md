@@ -50,6 +50,9 @@
 - All content quoted is recursively modeled and presents all the methods of a linked list.
 
 ## R08-01-Rot-HashTable-AdrClosed-environment
+- This folder deals with a closed adress of HashTable and your methods:
+  * Hash Table Closed Adress.
+- The present class contains the methods: getPrime(), insert(), remove(), search(), indexOf().
 
 ## R09-01-Rot-HashTable-AdrOpen-environment
 
