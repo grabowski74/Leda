@@ -54,7 +54,7 @@
   * Hash Table Closed Adress.
 - The present class contains the methods: getPrime(), insert(), remove(), search(), indexOf().
 
-## R09-01-Rot-HashTable-AdrOpen-environment
+## R09-01-Rot-HashTable--AdrOpen-environment
 
 ## R10-01-Rot-Binary-Tree-Search-environment
 
