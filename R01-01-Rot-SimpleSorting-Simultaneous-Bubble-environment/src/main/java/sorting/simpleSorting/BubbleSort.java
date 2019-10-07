@@ -15,7 +15,7 @@ import util.Util;
  * sorted.
  */
 public class BubbleSort<T extends Comparable<T>> extends AbstractSorting<T> {
-
+	//iniciando o metodo
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
 		//Verifica se os indices fornecidos sao validos
